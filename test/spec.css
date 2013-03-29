@@ -1,5 +1,4 @@
-@CHARSET "UTF-8";
-
+@charset "UTF-8";
 #mass-spec-result {
     border:5px solid #00a7ea;
     padding:10px;
@@ -20,13 +19,28 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    background: #A9EA00;
 }
-.mass-spec-detail li{
+
+.method-parent{
     margin: 0;
     padding:0;
     border: 2px solid #03c9fa;
     text-indent: 1em;
 }
+
+.method{
+    margin: 1em;
+    position:relative;
+    list-style: decimal inside;
+    text-indent: 0;
+    font-style: normal;
+    background: #F0F8FF;
+    padding: 2px;
+    color:#000;
+    border:2px outset #c0c0c0;
+}
+
 /* 整个测试套件都通过*/
 .mass-asserts-pass{
     background:#a9ea00;
@@ -47,37 +61,15 @@
     color:#fff;
 }
 
-pre a{
-    display:inline-block;
-    width:90%;
-    color:#000;
-    text-decoration:none;
-    outline:none;
-    position:relative;
-}
-pre a:hover{
-    background:#FFFFE0;
-}
-pre a form{
-    position:absolute;
+
+.method form{
+    /*    position:absolute;*/
     top:-5em;
     left:0px;
-    display:none;
+    /*    display:none;*/
 }
-pre a:hover form{
-    display:block;
-    width:90%;
-}
-.mass-spec-detail pre{
-    margin: 1em;
-    position:relative;
-    text-indent: 0;
-    font-style: normal;
-    background: #F0F8FF;
-    padding: 2px;
-    color:#000;
-    border:2px outset #c0c0c0;
-}
+
+
 
 .mass-spec-log{
     background: #cc9!important;
@@ -99,6 +91,7 @@ pre a:hover form{
     float: left;
 }
 .mass-spec-diff pre{
+
     background: #00cc00;
 }
 /* new clearfix */
